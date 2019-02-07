@@ -1,0 +1,4 @@
+---
+- name: "Debian: Open JDK"
+  apt:
+    name: default-jre

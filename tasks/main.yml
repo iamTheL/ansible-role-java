@@ -1,0 +1,8 @@
+---
+# tasks file for iaml.java
+
+- include_tasks: debian-open-jre.yml
+  when: ansible_os_family == 'Debian'
+
+- include_tasks: centos-open-jdk.yml
+  when: ansible_os_family == 'Centos' or ansible_os_family == 'RedHat'
